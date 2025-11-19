@@ -7,9 +7,9 @@ let placeButton: Locator;
 let popupModal: Locator;
 
 test.beforeEach(async ({ page }) => {
-    usernameField = page.locator("#username");
-    emailField = page.locator("#email");
-    placeButton = page.locator("#submit-order");
+    usernameField = page.locator('#username');
+    emailField = page.locator('#email');
+    placeButton = page.locator('#submit-order');
     popupModal = page.locator("[id=popup-message]");
 
     const filePath = `file://${path.resolve("src/order-flow.html")}`;
