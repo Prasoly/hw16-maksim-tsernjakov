@@ -15,7 +15,6 @@ test.beforeEach(async ({ page }) => {
 test('Login button is disabled if one field is empty', async ({page}) => {
     const loginField= page.getByTestId('username-input');
     const signInButton= page.getByTestId('signIn-button');
-
     await expect(signInButton).toBeEnabled();
     await loginField.fill("test");
     await expect(signInButton).toBeDisabled();
