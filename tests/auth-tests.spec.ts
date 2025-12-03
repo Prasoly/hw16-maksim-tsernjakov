@@ -26,7 +26,6 @@ test('Auth error modal is visible if credentials are wrong', async ({page}) => {
     const passwordField = page.getByTestId('password-input');
     const signInButton = page.getByTestId('signIn-button');
     const authPopup = page.getByTestId('authorizationError-popup');
-
     await loginField.fill(randomUsername);
     await passwordField.fill(randomPassword);
     await signInButton.click();
