@@ -30,6 +30,5 @@ test('Auth error modal is visible if credentials are wrong', async ({page}) => {
     await loginField.fill(randomUsername);
     await passwordField.fill(randomPassword);
     await signInButton.click();
-
     await expect(authPopup).toBeVisible();
 })
